@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Helpp">
+
+
+    <Button
+        android:id="@+id/ask_help"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="228dp"
+        android:layout_height="83dp"
+        android:text="χρειαζομαι βοηθεια"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/offer_help"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="228dp"
+        android:layout_height="83dp"
+        android:text="θελω να προσφερω βοηθεια"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ask_help"
+        app:layout_constraintVertical_bias="0.19999999"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="374dp"
+        android:layout_height="98dp"
+        android:text="Θα θέλατε να ζητήσετε ή να προσφέρετε βοήθεια;"
+        android:textColor="@color/primaryDark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

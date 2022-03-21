@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="background">@color/background</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.PopMe" >
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+    <style name="checkBoxStyle">
+        <item name="colorAccent">#053B7B</item>
+    </style>
+
+
+    <style name="RadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#053B7B</item>
+        <item name="colorControlNormal">#212529</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+
+        <item name="android:background">@drawable/faceb</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name=  "android:radius">33dp</item>
+    </style>
+    <style name="GoogleLoginButton">
+
+        <item name="android:background">@drawable/googl</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+       <item name=  "android:radius">33dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "170266459073",
+    "firebase_url": "https://vis-aegean.firebaseio.com",
+    "project_id": "vis-aegean",
+    "storage_bucket": "vis-aegean.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170266459073:android:efbacd80964f2005ddcd40",
+        "android_client_info": {
+          "package_name": "com.example.vis360"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170266459073-ntbibjl293i3aa1sosh8dhc8i7e7hsis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vis360",
+            "certificate_hash": "dee9a58c4d4fd9e05233d1e6827b9fa62948b540"
+          }
+        },
+        {
+          "client_id": "170266459073-4er1n5mlf9u19lfhqhvd9dcuotf3m6th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-rs6WKS4ZsIp-Rc4J58fXAIc_ShwTW1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170266459073-4er1n5mlf9u19lfhqhvd9dcuotf3m6th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

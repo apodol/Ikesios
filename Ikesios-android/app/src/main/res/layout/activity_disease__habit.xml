@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    tools:context=".Situation">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Συμπληρώστε τα παρακάτω στοιχεία για το άτομο για το οποίο κάνετε τη δήλωση"
+                android:textColor="@color/primaryDark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Καρδιακές παθήσεις"
+                android:textColor="@color/primaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/habit_kardiakiarithmia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Καρδιακή αρρυθμία" />
+
+            <CheckBox
+                android:id="@+id/habit_apofraksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Στένωση ή απόφραξη αρτηριών" />
+
+            <CheckBox
+                android:id="@+id/habit_siggenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+
+                android:text="Συγγενής Καρδιοπάθεια" />
+
+            <CheckBox
+                android:id="@+id/habit_allikardiaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Άλλη καρδιακή πάθηση" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Αναπνευστικές παθήσεις"
+                android:textColor="@color/primaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/habit_asthma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Άσθμα" />
+
+            <CheckBox
+                android:id="@+id/habit_emfisima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Εμφύσημα" />
+
+            <CheckBox
+                android:id="@+id/habit_brogxitida"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Χρόνια βρογχίτιδα" />
+
+
+            <CheckBox
+                android:id="@+id/habit_apofragmatiki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Χρόνια Αποφρακτική Πνευμονοπάθεια" />
+
+            <CheckBox
+                android:id="@+id/habit_inosi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Κυστική ίνωση" />
+
+            <CheckBox
+                android:id="@+id/habit_oidima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Πνευμονικό οίδημα" />
+            <CheckBox
+                android:id="@+id/habit_allianapneustiki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Άλλη αναπνευστική πάθηση" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Άλλες παθήσεις"
+                android:textColor="@color/primaryDark"
+                android:textSize="15sp"
+
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/habit_piesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Υψηλή αρτηριακή πίεση" />
+
+            <CheckBox
+                android:id="@+id/habit_diabiti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Διαβήτη" />
+
+            <CheckBox
+                android:id="@+id/habit_kapnistis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Είμαι / Είναι καπνιστής" />
+
+            <Button
+                android:id="@+id/final_covid"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="207dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="80dp"
+                android:text="Συνέχεια"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                app:rippleColor="@color/primaryDark"
+                app:strokeColor="@color/colorPrimary" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

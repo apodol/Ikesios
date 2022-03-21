@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Symptom_Check"> <!-- usually the name of the Java file associated with this activity -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:text="Πόσο πυρετό έχετε ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+
+                android:id="@+id/groupradio2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Μέχρι 36.5 βαθμούς"
+                    android:textSize="15sp"
+                    android:theme="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/symptom_1_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Έως 36 και 6"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_1_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="36 και 7, έως 38"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_1_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="38 έως 40"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_1_5"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Πάνω από 40 βαθμούς"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_1_6"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="299dp"
+                android:layout_height="48dp"
+                android:text="Ο πυρετός σας  τις τελευταίες 3 ημέρες  ..."
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+
+                android:id="@+id/groupradio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_2_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Έχει μείνει σταθερός"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_2_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Μάλλον ανεβαίνει "
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_2_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Μάλλον κατεβαίνει "
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_2_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+                android:text="Έχετε “ξερό” βήχα ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+
+                android:id="@+id/groupradio3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_3_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, έντονο
+"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_3_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, μέτριο"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_3_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_3_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="304dp"
+                android:layout_height="48dp"
+                android:text="Ο βήχας σας τις τελευταίες 3 ημέρες ..."
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+
+                android:id="@+id/groupradio4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_4_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Έχει μείνει σταθερός "
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_4_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Μάλλον χειροτερεύει"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_4_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Μάλλον καλυτερεύει "
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_4_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:text="Έχετε βουλωμένη μύτη ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_5_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, σχεδόν συνέχεια"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_5_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, που και που"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_5_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_5_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="304dp"
+                android:layout_height="48dp"
+                android:textStyle="bold"
+                android:text="Αισθάνεστε “Ξηρό” το λαιμό σας και πονάει ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp" />
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_6_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, πολύ"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_6_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, λίγο"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_6_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_6_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+            <TextView
+                android:id="@+id/textView8"
+                android:textStyle="bold"
+                android:layout_width="304dp"
+                android:layout_height="48dp"
+                android:text="Αισθάνεστε δυσκολία στην αναπνοή (δύσπνοια) ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp" />
+
+            <RadioGroup
+
+                android:id="@+id/groupradio7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_7_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, πολύ (πάνω από 15 αναπνοές το λεπτό)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_7_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, λίγο (μέχρι 15 αναπνοές το λεπτό) "
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_7_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_7_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="309dp"
+                android:layout_height="28dp"
+                android:text="Αισθάνεστε πονοκέφαλο ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_8_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, σχεδόν συνέχεια"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_8_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, που και που"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_8_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_8_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textView10"
+                android:layout_width="304dp"
+                android:layout_height="48dp"
+                android:text="Αισθάνεστε πόνο στην πλάτη ή στη μέση ή στα κόκαλα ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp" />
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_9_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, πολύ"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_9_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, λίγο"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_9_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_9_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="315dp"
+                android:layout_height="27dp"
+                android:text="Φταρνίζεστε ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_10_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, σχεδόν συνέχεια"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_10_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, που και που"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_10_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_10_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="315dp"
+                android:layout_height="35dp"
+                android:text="Αισθάνεστε γενικότερη εξάντληση ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_11_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, πολύ"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_11_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, λίγο"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_11_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_11_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                ></Space>
+
+            <TextView
+                android:id="@+id/textView13"
+
+                android:layout_width="275dp"
+                android:layout_height="37dp"
+                android:text="Έχετε διάρροια ;"
+                android:textColor="@color/primaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+
+                android:id="@+id/groupradio12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                >
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/symptom_12_1"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, πολύ"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_12_2"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ναι, λίγο"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/symptom_12_3"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Όχι"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/symptom_12_4"
+                    android:theme="@style/RadioButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Δεν ξέρω"
+                    android:textColor="#000400"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/symptom_submit"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="228dp"
+                android:layout_height="83dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="υποβολη"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                app:rippleColor="@color/primaryDark"
+                app:strokeColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

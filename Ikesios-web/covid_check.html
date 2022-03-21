@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Έλεγχος Συμπτωμάτων</title>
+
+
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ικέσιος</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Αρχική</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dilosi_katastashs.html">Δηλωση Καταστασης</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dilosi_astheneias.html">Δηλωση Ασθενειας</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="covid_check.html">Ελεγχος Συμπτωματων</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dilosi_voitheias.html">Δηλωση Βοηθειας</a>
+                </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-md-offset-3">
+                <div class="results invisible">
+                    <div class="alert" id="covid19_result"></div>
+                    <div class="alert" id="flu_result"></div>
+                    <div class="alert" id="cold_result"></div>
+
+                </div>
+
+                <form id="msform">
+
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+
+                    </ul>
+                    <!-- fieldsets -->
+                    <fieldset>
+
+                        <h3 class="header">Βήχας</h3>
+
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="dry_cough" id="dry_cough1" required value="-2">Δεν
+                                παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="dry_cough" id="dry_cough2" value="-1">
+
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="dry_cough3">
+                                <input type="radio" name="dry_cough" id="dry_cough3" value="1">
+
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="dry_cough4">
+                                <input type="radio" name="dry_cough" id="dry_cough4" value="2">
+
+                                Μερικές
+                            </label>
+                        </div>
+
+
+
+
+
+                        <div class="radio">
+                            <label for="dry_cough5">
+                                <input type="radio" name="dry_cough" id="dry_cough5" value="3">
+
+                                Συχνά
+                            </label>
+                        </div>
+
+
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Πυρετός</h3>
+
+
+                        <div class="radio"><label for="fever1">
+                                <input type="radio" name="fever" id="fever1" value="-2">
+
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="fever2">
+                                <input type="radio" name="fever" id="fever2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="fever3">
+                                <input type="radio" name="fever" id="fever3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="fever4">
+                                <input type="radio" name="fever" id="fever4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="fever5">
+                                <input type="radio" name="fever" id="fever5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Βουλωμένη Μύτη</h3>
+
+
+                        <div class="radio">
+
+                            <label for="stuffy_nose1">
+                                <input type="radio" name="stuffy_nose" id="stuffy_nose1" value="-2">
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="stuffy_nose2">
+                                <input type="radio" name="stuffy_nose" id="stuffy_nose2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="stuffy_nose3">
+                                <input type="radio" name="stuffy_nose" id="stuffy_nose3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="stuffy_nose4">
+                                <input type="radio" name="stuffy_nose" id="stuffy_nose4" value="2">
+
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="stuffy_nose5">
+                                <input type="radio" name="stuffy_nose" id="stuffy_nose5" value="3">
+
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Πονόλαιμος</h3>
+
+
+                        <div class="radio">
+                            <label for="sore_throat1">
+                                <input type="radio" name="sore_throat" id="sore_throat1" value="-2">
+
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="sore_throat2">
+                                <input type="radio" name="sore_throat" id="sore_throat2" value="-1">
+
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="sore_throat3">
+                                <input type="radio" name="sore_throat" id="sore_throat3" value="1">
+
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="sore_throat4">
+                                <input type="radio" name="sore_throat" id="sore_throat4" value="2">
+
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="sore_throat5">
+                                <input type="radio" name="sore_throat" id="sore_throat5" value="3">
+
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Δύσπνοια</h3>
+
+
+                        <div class="radio">
+                            <label for="shortness_of_breath1">
+                                <input type="radio" name="shortness_of_breath" id="shortness_of_breath1" value="-2">
+
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="shortness_of_breath2">
+                                <input type="radio" name="shortness_of_breath" id="shortness_of_breath2" value="-1">
+
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label for="shortness_of_breath3">
+                                <input type="radio" name="shortness_of_breath" id="shortness_of_breath3" value="1">
+
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="shortness_of_breath4">
+                                <input type="radio" name="shortness_of_breath" id="shortness_of_breath4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="shortness_of_breath5">
+                                <input type="radio" name="shortness_of_breath" id="shortness_of_breath5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Πονοκέφαλος</h3>
+
+
+                        <div class="radio">
+
+                            <label for="head_ache1">
+                                <input type="radio" name="head_ache" id="head_ache1" value="-2">
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="head_ache2">
+                                <input type="radio" name="head_ache" id="head_ache2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="head_ache3">
+                                <input type="radio" name="head_ache" id="head_ache3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="head_ache4">
+                                <input type="radio" name="head_ache" id="head_ache4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="head_ache5">
+                                <input type="radio" name="head_ache" id="head_ache5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Πόνοι σώματος</h3>
+
+
+                        <div class="radio">
+
+                            <label for="body_aches1">
+                                <input type="radio" name="body_aches" id="body_aches1" value="-2">
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="body_aches2">
+                                <input type="radio" name="body_aches" id="body_aches2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="body_aches3">
+                                <input type="radio" name="body_aches" id="body_aches3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="body_aches4">
+                                <input type="radio" name="body_aches" id="body_aches4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="body_aches5">
+                                <input type="radio" name="body_aches" id="body_aches5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Φτάρνισμα</h3>
+
+
+                        <div class="radio">
+
+                            <label for="sneezing1">
+                                <input type="radio" name="sneezing" id="sneezing1" value="-2">
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="sneezing2">
+                                <input type="radio" name="sneezing" id="sneezing2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="sneezing3">
+                                <input type="radio" name="sneezing" id="sneezing3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="sneezing4">
+                                <input type="radio" name="sneezing" id="sneezing4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="sneezing5">
+                                <input type="radio" name="sneezing" id="sneezing5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Εξάντληση</h3>
+
+
+                        <div class="radio">
+
+                            <label for="exhaustion1">
+                                <input type="radio" name="exhaustion" id="exhaustion1" value="-2">
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="exhaustion2">
+                                <input type="radio" name="exhaustion" id="exhaustion2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="exhaustion3">
+                                <input type="radio" name="exhaustion" id="exhaustion3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="exhaustion4">
+                                <input type="radio" name="exhaustion" id="exhaustion4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="exhaustion5">
+                                <input type="radio" name="exhaustion" id="exhaustion5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                    <fieldset>
+                        <h3 class="header">Διάρροια</h3>
+
+
+                        <div class="radio">
+
+                            <label for="diarrhea1">
+                                <input type="radio" name="diarrhea" id="diarrhea1" value="-2">
+                                Δεν παρατηρήθηκε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="diarrhea2">
+                                <input type="radio" name="diarrhea" id="diarrhea2" value="-1">
+                                Σπάνια
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="diarrhea3">
+                                <input type="radio" name="diarrhea" id="diarrhea3" value="1">
+                                Ενίοτε
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="diarrhea4">
+                                <input type="radio" name="diarrhea" id="diarrhea4" value="2">
+                                Μερικές
+                            </label>
+                        </div>
+                        <div class="radio">
+
+                            <label for="diarrhea5">
+                                <input type="radio" name="diarrhea" id="diarrhea5" value="3">
+                                Συχνά
+                            </label>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous"
+                            value="Προηγούμενο" />
+                        <input type="button" name="next" class="next action-button" value="Επόμενο" />
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161247655-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161247655-1');
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Εγγραφή Χρήστη</title>
+
+
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- As a link -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ικέσιος</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Συνδεση</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Εγγραφη</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-8 offset-md-2">
+                <form id="register">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h3>Εγγραφή Χρήστη</h3>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="firstname">Όνομα</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="Γιώργος" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="lastname">Επώνυμο</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Παπαδόπουλος" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4"
+                                        placeholder="your@mail.com" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="password">Κωδικός</label>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Τηλεφωνο</label>
+                                <input type="text" class="form-control" id="phone" placeholder="6900000000" required>
+                            </div>
+                            
+
+
+
+
+                            <!-- <button type="submit" class="btn btn-primary">Εγγραφη</button> -->
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Δημογραφικά Στοιχεία</h5>
+                            <p class="card-subtitle mb-2 text-muted">Όχι υποχρεωτικά, χρησιμοποιούνται μόνο για την
+                                παραγωγή στατιστικών</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="phone">Πόλη Διαμονής</label>
+                                <input type="text" class="form-control" id="current_town" placeholder="Αθήνα, Ελλάδα">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="rel-gender">Φύλο</label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">Άνδρας</option>
+                                        <option value="female">Γυναίκα</option>
+                                        <option value="other">Άλλο</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="age">Ηλικία</label>
+                                    <input type="text" class="form-control" id="age" placeholder="28">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="living-together">Οικογενειακή Κατάσταση</label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">Εγγαμος/η ή σε Σύμφωνο Συμβίωσης</option>
+                                        <option value="female">Έγγαμος/η ή σε ΣΣ με παιδιά</option>
+                                        <option value="other">Άγαμος</option>
+                                        <option value="other">Άγαμος με παιδιά </option>
+                                        <option value="other">Άλλο</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="rel-gender">Εργασία</label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">Δημ.Υπάλληλος</option>
+                                        <option value="female">Ιδιωτικός Υπάλληλος</option>
+                                        <option value="other">Αυτοαπασχολούμενος</option>
+                                        <option value="other">Άνεργος</option>
+                                        <option value="other">Φοιτητής</option>
+                                        <option value="other">Άλλο</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="living-together">Με πόσα άτομα κατοικείτε στο ίδιο σπίτι </label>
+                                    <input type="text" class="form-control" id="" placeholder="4">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="rel-gender">Σημειώστε της σχέση των ατόμων που συγκατοικείτε </label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">Σύζυγος / Σύντροφος</option>
+                                        <option value="female">Παιδί / Παιδιά</option>
+                                        <option value="other">Γονείς</option>
+                                        <option value="other">Άλλοι, συγγενείς</option>
+                                        <option value="other">Άλλοι, φίλοι, συνάδελφοι κλπ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-7">
+                                    <label for="living-together">Οικονομικό Επίπεδο (μηνιαία έξοδα, προσωπικά ή
+                                        οικογενειακά)</label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">έως 500 ευρώ</option>
+                                        <option value="female"> 500 - 1000 ευρώ</option>
+                                        <option value="other">1000 - 2000 ευρώ</option>
+                                        <option value="other">2000 - 4000 ευρώ</option>
+                                        <option value="other">άνω των 4000 ευρώ
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-5">
+                                    <label for="rel-gender">Κλαδος Εργασίας</label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">Βιομηχανία</option>
+                                        <option value="female">Αγροδιατροφή</option>
+                                        <option value="other">Τουρισμός</option>
+                                        <option value="other">Υγεία</option>
+                                        <option value="other">Πληροφορική-Επικοινωνίες</option>
+                                        <option value="other">Εκπαίδευση</option>
+                                        <option value="other">Άμυνα-Ασφάλεια</option>
+                                        <option value="other">Παροχή υπηρεσιών</option>
+                                        <option value="other">Άλλο</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="dilosi_astheneias.html" class="btn btn-primary btn-raised mt-3">Εγγραφη</a>   
+                    <!-- <input type="submit" class="btn btn-primary btn-raised mt-3" id="in-submit" value="Εγγραφη"> -->
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161247655-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161247655-1');
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
+</body>
+
+</html>

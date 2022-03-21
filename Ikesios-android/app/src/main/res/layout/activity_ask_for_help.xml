@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskForHelp">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:text="Ζητάτε βοήθεια για εσάς ή για κάποιον άλλον;"
+        android:textColor="@color/primaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <RadioGroup
+
+        android:id="@+id/groupradio"
+        android:layout_width="311dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/askforhelp_me"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Για Εμένα"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/askforhelp_other"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Για κάποιον άλλο"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewHelp"
+        android:layout_width="325dp"
+        android:layout_height="29dp"
+        android:text="Τι βοήθεια θα θέλατε;"
+        android:textColor="@color/primaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <RadioGroup
+
+        android:id="@+id/groupradio12"
+        android:layout_width="329dp"
+        android:layout_height="302dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHelp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/askforhelp_psonia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Βοήθεια με τα ψώνια(φαρμακείο,supermarket,κλπ)"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/askforhelp_spiti"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Βοήθεια στο σπίτι(καθαρισμός,τακτοποίηση,μεταφορές επιπλων, κλπ)"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/askforhelp_texnologia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Βοήθεια σε κάτι τεχνολογικό(internet,υπολογιστής,κάμερα, κλπ)"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/askforhelp_miliso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Κάποιον να μιλήσω,τηλεφωνικά ή μέσω internet"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/askforhelp_iatriki"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ιατρική βοήθεια"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/askforhelp_alli"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Άλλο"
+            android:textSize="15sp"
+            android:theme="@style/RadioButton" />
+
+    </RadioGroup>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/askforhelp_switch1"
+        android:layout_width="318dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:checked="true"
+        android:stateListAnimator="@android:anim/fade_in"
+        android:text="Θέλετε τα στοιχεία να τα δούν οι πιθανοί εθελοντές ώστε να επικοινωνήσουν για παροχή βοήθειας ;"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio12"
+        app:layout_constraintVertical_bias="0.0"
+        app:useMaterialThemeColors="true"
+        android:imeActionLabel="Ναι"
+
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/askforhelp_switch2"
+        android:layout_width="315dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:checked="true"
+        android:stateListAnimator="@android:anim/fade_in"
+        android:text="Θέλετε τα στοιχεία να τα δούν οι πιθανοί εθελοντές ώστε να επικοινωνήσουν για παροχή βοήθειας ;"
+        android:textSize="15sp"
+        android:imeActionLabel="Ναι"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askforhelp_switch1"
+        app:layout_constraintVertical_bias="0.129"
+        app:useMaterialThemeColors="true"
+        />
+
+    <Button
+        android:id="@+id/askforhelp_submit"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:text="υποβολη"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/askforhelp_switch2"
+        app:layout_constraintVertical_bias="0.476"
+        app:rippleColor="@color/primaryDark"
+        app:strokeColor="@color/colorPrimary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Δήλωση Βοήθειας</title>
+
+
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- As a link -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ικέσιος</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Αρχική</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dilosi_katastashs.html">Δηλωση Καταστασης</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dilosi_astheneias.html">Δηλωση Ασθενειας</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="covid_check.html">Ελεγχος Συμπτωματων</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dilosi_voitheias.html">Δηλωση Βοηθειας</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-7">
+
+                <form id="dhlosh_anagkhs">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Δήλωση Ανάγκης για Βοήθεια</h3>
+                            <div class="form-group">
+                                <label for="relation">Τα στοιχεία που θα δηλώσετε αφορούν</label>
+                                <select class="form-control" name="relation">
+                                    <option value="me">Εμένα</option>
+                                    <option value="se-lwm">Κάποιον άλλο που διαμένει μαζί μου</option>
+                                    <option value="se-nlwm">Κάποιον άλλο που δεν διαμένει μαζί μου, αλλά τον φροντίζω
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="related-optional">
+                                <div class="form-group">
+                                    <label for="rel-who">Παρακαλώ, προσδιορίστε</label>
+                                    <select class="form-control" name="rel-who">
+                                        <option value="parent">Γονέας</option>
+                                        <option value="child">Τέκνο</option>
+                                        <option value="other">Άλλο</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rel-age" class="bmd-label-floating">Ηλικία</label>
+                                    <input type="text" class="form-control" id="rel-age">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rel-gender">Φύλο</label>
+                                    <select class="form-control" id="rel-gender">
+                                        <option value="male">Άνδρας</option>
+                                        <option value="female">Γυναίκα</option>
+                                        <option value="other">Άλλο</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rel-loc" class="bmd-label-floating">Πόλη Διαμονής</label>
+                                    <input type="text" class="form-control" name="rel-loc" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rel-name" class="bmd-label-floating">Όνοματεπώνυμο</label>
+                                    <input type="text" class="form-control" name="rel-name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="help-request">Τι βοήθεια θα θέλατε;</label>
+                                <select class="form-control" id="help-request">
+                                    <option value="hr-1">Βοήθεια με τα ψώνια (φαρμακείο, supermarket, κλπ) </option>
+                                    <option value="hr-2">Βοήθεια στο σπίτι (καθαρισμός, τακτοποίηση, μεταφορές επίπλων)</option>
+                                    <option value="hr-3">Βοήθεια σε κάτι τεχνολογικό (internet, υπολογιστής, κάμερα)</option>
+                                    <option value="hr-4">Κάποιον να μιλήσω, τηλεφωνικά ή μέσω internet</option>
+                                    <option value="hr-5">Ιατρική βοήθεια</option>
+                                    <option value="hr-6">Άλλο</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="help-request">Θέλετε τα στοιχεία να τα δούν οι πιθανοί εθελοντές ώστε να επικοινωνήσουν για παροχή βοήθειας ;</label>
+                                <select class="form-control" id="help-request">
+                                    <option value="yes">Ναι</option>
+                                    <option value="no">Όχι</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="help-request">Θέλετε τα στοιχεία προωθηθούν στο Δήμο σας ή σε άλλη Δημόσια Υπηρεσία ώστε να επικοινωνήσουν για παροχή βοήθειας ;</label>
+                                <select class="form-control" id="help-request">
+                                    <option value="yes">Ναι</option>
+                                    <option value="no">Όχι</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-raised mt-3" id="in-submit" value="Υποβολη">
+
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-5">
+
+                <form id="dhlosh_paroxhs">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Δήλωση Προσφοράς για Βοήθεια</h3>
+                            <div class="form-group">
+                                <label for="help-request">Τι βοήθεια θα μπορούσατε να δώσετε</label>
+                                <select class="form-control" id="provide_help">
+                                    <option value="pr-1">Βοήθεια με τα ψώνια (φαρμακείο, supermarket, κλπ) </option>
+                                    <option value="pr-2">Βοήθεια στο σπίτι (καθαρισμός, τακτοποίηση, μεταφορές επίπλων)</option>
+                                    <option value="pr-3">Βοήθεια σε κάτι τεχνολογικό (internet, υπολογιστής, κάμερα)</option>
+                                    <option value="pr-4">Κάποιον να μιλήσω, τηλεφωνικά ή μέσω internet</option>
+                                    <option value="pr-5">Ιατρική βοήθεια</option>
+                                    <option value="pr-6">Άλλο</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-raised mt-3" id="in-submit" value="Υποβολη">
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161247655-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161247655-1');
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
+</body>
+
+</html>
