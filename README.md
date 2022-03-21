@@ -10,6 +10,7 @@ After successful registration, the user can perform the following actions:
 * View statistics based on the data collected so far.
 
 
+Achieved 3rd place at Antivirus CrowdHackathon , conducted by CrowdPolicy· Apr 2020
 
 ---
 
